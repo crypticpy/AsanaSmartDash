@@ -76,23 +76,49 @@ This Asana Portfolio Dashboard is a powerful Streamlit application designed to p
 asana-portfolio-dashboard/
 ├── app.py                  # Main application file
 ├── run.py                  # Script to run the application
+├── config.json             # Configuration file for API credentials
+├── export_project.py       # Script to export project data
+├── project_export.txt      # Exported project data
 ├── requirements.txt        # Project dependencies
 ├── README.md               # Project documentation
 ├── src/                    # Source code
+│   ├── __init__.py         # Package initialization
 │   ├── components/         # UI components
+│   │   ├── __init__.py     # Package initialization
 │   │   ├── dashboard_metrics.py  # Dashboard metrics components
 │   │   ├── project_card.py       # Project card component
 │   │   ├── sidebar.py            # Sidebar component
 │   │   └── chat_assistant.py     # Chat assistant component
 │   ├── styles/             # CSS and styling
+│   │   ├── __init__.py     # Package initialization
 │   │   └── custom.py       # Custom CSS styles
 │   ├── utils/              # Utility functions
+│   │   ├── __init__.py     # Package initialization
 │   │   ├── asana_api.py    # Asana API utilities
 │   │   ├── config.py       # Configuration utilities
 │   │   ├── data_processing.py  # Data processing utilities
 │   │   ├── visualizations.py   # Visualization utilities
+│   │   ├── chat_logic.py       # Chat logic utilities
 │   │   └── chat/           # Chat assistant utilities
-│   └── pages/              # Additional pages (for future use)
+│   │       ├── __init__.py     # Package initialization
+│   │       ├── api_wrapper.py  # API wrapper for chat
+│   │       ├── assistant.py    # Assistant implementation
+│   │       ├── data_context.py # Data context for chat
+│   │       ├── document_indexer.py # Document indexing
+│   │       ├── formatting.py   # Response formatting
+│   │       ├── query_processor.py # Query processing
+│   │       ├── tool_functions.py  # Tool functions
+│   │       └── visualization_handler.py # Visualization handling
+│   ├── pages/              # Additional pages
+│   │   ├── __init__.py     # Package initialization
+│   │   ├── resource_allocation_page.py # Resource allocation page
+│   │   └── resource_components/  # Resource page components
+│   │       ├── __init__.py     # Package initialization
+│   │       ├── performance_trends.py # Performance trends component
+│   │       ├── project_allocation.py # Project allocation component
+│   │       ├── resource_utilization.py # Resource utilization component
+│   │       └── team_member_metrics.py # Team member metrics component
+│   └── data/               # Data directory (for future use)
 └── venv/                   # Virtual environment (not tracked in git)
 ```
 
